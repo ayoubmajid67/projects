@@ -281,6 +281,7 @@ nav .ContactInfo {
     content: "";
     position: absolute;
     background-color: rgb(55, 4, 4);
+    transition: 0.4s;
 }
 
 /* pattern 1  */

@@ -115,18 +115,20 @@ function DrawWinnerPattern(arrPattern) {
 function closeWinnerContainer() {
 	winnerContainer.style.visibility = "none";
 	winnerContainer.style.display = "none";
-	resetGame();
+
+	setTimeout(() => {
+		resetGame();
+	}, 40);
 }
 function showResult(result) {
 	winnerContainer.style.visibility = "visible";
 	winnerContainer.style.display = "block";
-     console.log(result); 
+	console.log(result);
 	if (result != "Draw") winnerContainer.querySelector(".baseMsg").innerText = "The winner is ";
-    else  winnerContainer.querySelector(".baseMsg").innerText = "it's a";
+	else winnerContainer.querySelector(".baseMsg").innerText = "it's a";
 
 	winnerContainer.querySelector(".GameResult").innerText = result + "!";
-
-} 
+}
 
 function play(index) {
 	if (gameStatus == "Stop") {
@@ -148,10 +150,11 @@ function play(index) {
 		let result = checkTheWinner(arrGame);
 
 		if (result.winner != "continue") {
-			showResult(result.winner);
-
 			if (result.winner != "Draw") DrawWinnerPattern(result.arrPattern);
 
+			setTimeout(() => {
+				showResult(result.winner);
+			}, 50);
 			gameStatus = "Stop";
 		}
 	}
