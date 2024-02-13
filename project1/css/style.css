@@ -121,12 +121,11 @@ nav .headerTitle span {
 
 nav .ContactInfo {
     padding-right: 2rem;
-    min-width: 17%;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 60px;
 }
 @media (max-width : 768px){
 
