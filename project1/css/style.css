@@ -1,0 +1,283 @@
+/* start  default  styling   */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: cursive, 'Segoe UI';
+
+    background: rgb(11, 10, 19);
+    background: linear-gradient(157deg, rgba(11, 10, 19, 1) 45%, rgb(23, 21, 2) 60%);
+}
+
+:root {
+
+    --iconLightColor: white;
+    --iconDarkColor: #556e82;
+    --mainLightColor: white;
+    --mainDarkColor: #ffdc17;
+    --secondaryBgColor: #171a26;
+    --mainBgColor: #ffdc17;
+}
+
+input, button {
+    outline: none;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: var(--iconLightColor);
+}
+
+/*end default styling  */
+
+/* start components  */
+/* start container  */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+/* start bootstrap media screen  */
+
+/* small */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium*/
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large*/
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end container  */
+/* end components  */
+
+/* start header  */
+header {
+    padding: 10px;
+}
+
+nav {
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+@media (max-width:992px) {
+    nav {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width:768px) {
+    nav {
+        font-size: 10px;
+    }
+
+}
+
+nav .headerTitle {
+    font-size: 2em;
+    color: var(--mainDarkColor);
+
+}
+
+nav .headerTitle span {
+    color: var(--iconLightColor);
+}
+
+nav .ContactInfo {
+    padding-right: 2rem;
+    min-width: 17%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+@media (max-width : 768px){
+
+nav .ContactInfo{
+    padding-right: 5px;
+}
+}
+
+.ContactInfo a {
+    font-size: 1.4em;
+    transition: 0.3s;
+}
+
+.ContactInfo a:hover {
+
+    transform: translateY(-2px) scale(1.02);
+}
+
+.ContactInfo a i {
+    transition: 0.3s;
+}
+
+.ContactInfo a i:hover {
+    color: var(--iconLightColor);
+}
+
+/* end header  */
+/* start main content  */
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    padding: 0 10px;
+    padding-top: 7vh;
+    height: 92vh;
+
+}
+
+@media (max-width:992px) {
+    .mainContent {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .mainContent {
+        font-size: 12px;
+    }
+
+}
+
+.mainContent .mainHeaderInfo {
+    margin: 20px 0;
+    width: 60%;
+    flex-shrink: 0;
+    min-width: 320px;
+    max-width: 100%;
+    padding: 10px 6px;
+    background-color: black;
+    color: var(--mainLightColor);
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.251);
+}
+
+.mainContent h1 {
+    font-size: 1.6em;
+
+}
+
+.mainContent h1 span {
+    color: var(--mainBgColor);
+}
+
+.mainContent .boardParent {
+    padding: 40px;
+    width: 55% !important;
+    min-width: 320px;
+    max-width: 100%;
+    border: 5px solid var(--secondaryBgColor);
+    background-color: var(--mainBgColor);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    justify-content: center;
+    aspect-ratio: 1/1;
+}
+
+.boardParent .box {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    text-align: center;
+    border-left: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.boardParent .box:hover {
+    background-color: #b59c0f;
+    ;
+
+}
+
+.boardParent .box:nth-child(-n+3) {
+    border-top: none;
+    border-bottom: none;
+}
+
+.boardParent .box:nth-child(3),
+.boardParent .box:nth-child(6),
+.boardParent .box:nth-child(9) {
+    border-right: none;
+}
+
+.boardParent .box:nth-last-child(-n+3) {
+    border-top: none;
+    border-bottom: none;
+}
+
+.boardParent .box h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-shadow: 0px 1px black;
+
+}
+
+#reset {
+    margin-top: 15px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.5em;
+    background-color: black;
+    font-weight: bold;
+    font-family: cursive;
+    font-variant: small-caps;
+    color: var(--mainLightColor);
+    transition: 0.4s;
+    cursor: pointer;
+    border: 1px solid rgba(245, 222, 179, 0.315);
+}
+
+#reset:hover {
+    border: 1px solid wheat;
+}
+
+
+/*end main content  */
