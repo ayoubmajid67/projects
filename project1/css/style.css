@@ -116,6 +116,7 @@ nav .headerTitle {
 }
 
 nav .headerTitle span {
+    transition: 0.4s;
     color: var(--iconLightColor);
 }
 
@@ -127,11 +128,12 @@ nav .ContactInfo {
     justify-content: space-between;
     gap: 60px;
 }
-@media (max-width : 768px){
 
-nav .ContactInfo{
-    padding-right: 5px;
-}
+@media (max-width : 768px) {
+
+    nav .ContactInfo {
+        padding-right: 5px;
+    }
 }
 
 .ContactInfo a {
@@ -160,7 +162,7 @@ nav .ContactInfo{
     gap: 2px;
     align-items: center;
     padding: 0 10px;
-    padding-top: 7vh;
+    padding-top: 4vh;
     height: 92vh;
 
 }
@@ -193,6 +195,13 @@ nav .ContactInfo{
     box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.251);
 }
 
+@media (max-width :992px) {
+    .mainContent .mainHeaderInfo {
+        width: 80%;
+    }
+}
+
+
 .mainContent h1 {
     font-size: 1.6em;
 
@@ -204,7 +213,7 @@ nav .ContactInfo{
 
 .mainContent .boardParent {
     padding: 40px;
-    width: 55% !important;
+    width: 55%;
     min-width: 320px;
     max-width: 100%;
     border: 5px solid var(--secondaryBgColor);
@@ -214,6 +223,13 @@ nav .ContactInfo{
     grid-template-columns: repeat(3, minmax(100px, 1fr));
     justify-content: center;
     aspect-ratio: 1/1;
+    position: relative;
+}
+
+@media (max-width :992px) {
+    .mainContent .boardParent {
+        width: 80%;
+    }
 }
 
 .boardParent .box {
@@ -225,6 +241,7 @@ nav .ContactInfo{
     text-align: center;
     border-left: none;
     transition: 0.3s;
+    position: relative;
     cursor: pointer;
 }
 
@@ -251,13 +268,84 @@ nav .ContactInfo{
 }
 
 .boardParent .box h3 {
+    transition: 0.3s;
     font-size: 1.8em;
     font-weight: bold;
     font-variant: small-caps;
     text-shadow: 0px 1px black;
+}
+
+/* start  Patterns  */
+.boardParent .box:before {
+    z-index: 99;
+    content: "";
+    position: absolute;
+    background-color: rgb(55, 4, 4);
+}
+
+/* pattern 1  */
+.boardParent .box.Pattern1::before {
+    width: 100%;
+    height: 5px;
+}
+
+/* pattern 2  */
+.boardParent .box.Pattern2::before {
+    width: 5px;
+    height: 100%;
+}
+
+/* pattern 3 */
+.boardParent .box.Pattern3:nth-child(1):before {
+    width: 120%;
+    height: 6px;
+    right: 0;
+    bottom: -4px;
+    transform-origin: right bottom;
+    transform: rotate(45deg);
 
 }
 
+.boardParent .box.Pattern3:nth-child(5):before {
+    width: 240%;
+    height: 6px;
+    top: -4px;
+    left: -2px;
+    transform-origin: left bottom;
+    transform: rotate(45deg);
+}
+
+@media (max-width:768px) {
+
+    .boardParent .box.Pattern3:nth-child(1):before,
+    .boardParent .box.Pattern3:nth-child(5):before {
+        transform: rotate(40deg);
+    }
+
+
+}
+
+/* pattern 4 */
+.boardParent .box.Pattern4:nth-child(3):before {
+    width: 120%;
+    height: 6px;
+    left: 0;
+    bottom: -4px;
+    transform-origin: left bottom;
+    transform: rotate(-45deg);
+
+}
+
+.boardParent .box.Pattern4:nth-child(5):before {
+    width: 240%;
+    height: 6px;
+    top: -11.4px;
+    right: -10px;
+    transform-origin: right bottom;
+    transform: rotate(-45deg);
+}
+
+/* end Patterns  */
 #reset {
     margin-top: 15px;
     width: 200px;
@@ -267,7 +355,6 @@ nav .ContactInfo{
     background-color: black;
     font-weight: bold;
     font-family: cursive;
-    font-variant: small-caps;
     color: var(--mainLightColor);
     transition: 0.4s;
     cursor: pointer;
@@ -278,5 +365,49 @@ nav .ContactInfo{
     border: 1px solid wheat;
 }
 
-
 /*end main content  */
+
+/* start winner container  */
+.winnerContainer {
+    transition: 0.4s;
+    z-index: 300;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: rgba(0, 0, 0, 0.871);
+    min-height: 300px;
+}
+
+@media (max-width:1200px) {
+    .winnerContainer {
+        width: 76%;
+    }
+}
+
+@media (max-width:992px) {
+    .winnerContainer {
+        width: 83%;
+    }
+}
+
+.winnerContainer .close {
+    text-align: end;
+    padding-right: 10px;
+}
+
+.winnerContainer .textContent {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 14px 10px;
+}
+
+.winnerContainer .textContent h1 {
+    color: var(--mainBgColor);
+}
+
+/* end winner container  */
