@@ -113,7 +113,7 @@ function DrawWinnerPattern(arrPattern) {
 }
 
 function closeWinnerContainer() {
-	winnerContainer.style.visibility = "none";
+	winnerContainer.style.visibility = "hidden";
 	winnerContainer.style.display = "none";
 
 	setTimeout(() => {

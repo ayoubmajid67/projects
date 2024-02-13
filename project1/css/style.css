@@ -8,7 +8,8 @@
 
 body {
     font-family: cursive, 'Segoe UI';
-
+width: 100%;
+min-height: 100vh;
     background: rgb(11, 10, 19);
     background: linear-gradient(157deg, rgba(11, 10, 19, 1) 45%, rgb(23, 21, 2) 60%);
 }
@@ -162,8 +163,9 @@ nav .ContactInfo {
     gap: 2px;
     align-items: center;
     padding: 0 10px;
-    padding-top: 4vh;
-    height: 92vh;
+    padding-top: 2vh;
+    height: 90vh;
+    padding-bottom: 10px;
 
 }
 
@@ -360,6 +362,7 @@ nav .ContactInfo {
     transition: 0.4s;
     cursor: pointer;
     border: 1px solid rgba(245, 222, 179, 0.315);
+    margin-bottom: 10px;
 }
 
 #reset:hover {
@@ -381,6 +384,8 @@ nav .ContactInfo {
     border-radius: 14px;
     background-color: rgba(0, 0, 0, 0.871);
     min-height: 300px;
+    visibility: hidden;
+    display: none;
 }
 
 @media (max-width:1200px) {
@@ -398,6 +403,8 @@ nav .ContactInfo {
 .winnerContainer .close {
     text-align: end;
     padding-right: 10px;
+
+
 }
 
 .winnerContainer .textContent {
