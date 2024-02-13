@@ -123,7 +123,6 @@ function closeWinnerContainer() {
 function showResult(result) {
 	winnerContainer.style.visibility = "visible";
 	winnerContainer.style.display = "block";
-	console.log(result);
 	if (result != "Draw") winnerContainer.querySelector(".baseMsg").innerText = "The winner is ";
 	else winnerContainer.querySelector(".baseMsg").innerText = "it's a";
 
