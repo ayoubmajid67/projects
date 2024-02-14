@@ -179,6 +179,7 @@ nav .ContactInfo {
 @media (max-width:768px) {
     .mainContent {
         font-size: 12px;
+        padding-top: 4vh;
     }
 
 }
@@ -352,6 +353,14 @@ nav .ContactInfo {
     transform-origin: right bottom;
     transform: rotate(-45deg);
 }
+/* @media (max-width:768px){
+    .boardParent .box.Pattern4:nth-child(5):before,
+    .boardParent .box.Pattern4:nth-child(3):before {
+        transform: rotate(-40deg);
+    }
+
+
+} */
 
 /* end Patterns  */
 #reset {
