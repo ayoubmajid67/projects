@@ -234,6 +234,12 @@ nav .ContactInfo {
     }
 }
 
+@media (max-width :768px) {
+    .mainContent .boardParent {
+        width: 100%;
+    }
+}
+
 .boardParent .box {
     padding: 7px;
     display: flex;
@@ -249,8 +255,7 @@ nav .ContactInfo {
 
 .boardParent .box:hover {
     background-color: #b59c0f;
-    ;
-
+    
 }
 
 .boardParent .box:nth-child(-n+3) {
