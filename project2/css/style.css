@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+ul, li {
+    list-style: none;
+}
+
+button, input {
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* start bootstrap media screen  */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* small */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium*/
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large*/
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* start header  */
+:root {
+    --primaryBgColor: #811538;
+    --borderColor: #1f030c5e;
+}
+
+header {
+    height: 24vh;
+    min-height: 220px;
+    background-color: var(--primaryBgColor);
+    clip-path: polygon(0 0, 100% 0%, 100% 96%, 0 80%);
+    border-bottom: 20px solid var(--borderColor);
+
+}
+
+header .headerBackground {
+    padding: 13px 20px;
+    height: 100%;
+    background-image: url('../imgs/pattern.png');
+}
+
+/* start logo header */
+.logoHeader {
+    position: absolute;
+    z-index: 1;
+    top: 20vh;
+    left: 7%;
+    transform: translateY(-60%);
+}
+
+.logoHeader img {
+    height: 25vh;
+    min-height: 150px;
+    filter: drop-shadow(5px 3px 5px rgba(118, 116, 116, 0.442));
+    -webkit-filter: drop-shadow(5px 3px 5px rgba(118, 116, 116, 0.401));
+
+}
+
+@media (max-width:992px) {
+    .logoHeader img {
+        height: 20vh;
+    }
+
+    .logoHeader {
+        top: 21.5vh;
+    }
+}
+
+@media (max-width:768px) {
+    .logoHeader img {
+        height: 15vh;
+    }
+}
+
+.headerBackground .TextContent {
+    direction: rtl;
+    padding: 10px;
+    color: white;
+}
+
+.headerBackground .TextContent h1:nth-child(1) {
+    font-size: 2.4em;
+}
+
+.headerBackground .TextContent h1:nth-child(2) {
+    font-size: 2.6em;
+}
+
+/* end logo header */
+/* end header  */
+
+/* start  Qatar img  */
+.qatarImgContainer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.qatarImgContainer img {
+    width: 360px;
+    max-width: 100%;
+}
+
+@media (max-width:992px) {
+    .qatarImgContainer img {
+        width: 300px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .qatarImgContainer img {
+        width: 260px;
+    }
+}
+
+/* end Qatar  img  */
