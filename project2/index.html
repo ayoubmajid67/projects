@@ -1,43 +1,190 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- 
-    <link rel="stylesheet" href="css/style.css">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    
- <!-- start header  -->
-  <div class="logoHeader">
-    <img src="/imgs/logo.png" alt="logo">
-  </div>   
- <header>
-        <div class="headerBackground">
-        
-            <div class="TextContent">
-                <h1>كاس</h1>
-                <h1>العالم</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- start header  -->
+		<div class="logoHeader">
+			<img src="/imgs/logo.png" alt="logo" />
+		</div>
+		<header>
+			<div class="headerBackground">
+				<div class="TextContent">
+			
+				</div>
+			</div>
+		</header>
+		<!-- start Qatar word -->
+		<div class="qatarImgContainer">
+			<img src="./imgs/qatar-word.png" alt="" />
+		</div>
+		<!-- end Qatar word -->
+
+		<!-- end header -->
+
+		<div class="mainContent">
+            <div class="container">
+                <!--start title -->
+				<div class="title ">
+					<h1>الخارطة</h1>
+					<hr />
+				</div>
+                <div class="roadmapContainer">
+                    <img src="imgs/roadmap.png" alt="">
+                </div>
+				<!--end title -->
             </div>
-      
-        </div>
+			<div class="container">
+				<!-- start standing -->
+				<!--start title -->
+				<div class="title">
+					<h1>المجموعات</h1>
+					<hr />
+				</div>
+				<!--end title -->
+				<div class="standing">
+					<div class="box">
+						<div class="groupTitle">
+							<h3>GROUP_A</h3>
+						</div>
+						<table>
+							<thead>
+								<td>Team</td>
+								<td id="won">W</td>
+								<td id="lost">L</td>
+								<td id="draw">D</td>
+								<td id="points">P<span>1s</span></td>
+							</thead>
+							<tr>
+								<td class="TeamContainer">
+									<img src="https://th.bing.com/th?id=OIP.Ir8zEMdlGIAhFPNsqU2oeQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="" class="teamImg" />
+									<h4>ECU</h4>
+								</td>
+								<td class="won">0</td>
+								<td class="lost">0</td>
+								<td class="draw">0</td>
+								<td class="points">0</td>
+							</tr>
+							<tr>
+								<td class="TeamContainer">
+									<img src="https://th.bing.com/th?id=OIP.Ir8zEMdlGIAhFPNsqU2oeQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="" class="teamImg" />
+									<h4>ECU</h4>
+								</td>
+								<td class="won">0</td>
+								<td class="lost">0</td>
+								<td class="draw">0</td>
+								<td class="points">0</td>
+							</tr>
+							<tr>
+								<td class="TeamContainer">
+									<img src="https://th.bing.com/th?id=OIP.Ir8zEMdlGIAhFPNsqU2oeQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="" class="teamImg" />
+									<h4>ECU</h4>
+								</td>
+								<td class="won">0</td>
+								<td class="lost">0</td>
+								<td class="draw">0</td>
+								<td class="points">0</td>
+							</tr>
+							<tr>
+								<td class="TeamContainer">
+									<img src="https://th.bing.com/th?id=OIP.Ir8zEMdlGIAhFPNsqU2oeQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="" class="teamImg" />
+									<h4>ECU</h4>
+								</td>
+								<td class="won">0</td>
+								<td class="lost">0</td>
+								<td class="draw">0</td>
+								<td class="points">0</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- end standing -->
+			</div>
+			<!--  start matches -->
+			<div class="container matchesSection">
+				<!--start title -->
+				<div class="title">
+					<h1>المبارايات</h1>
+					<hr />
+				</div>
+                <!-- start choice stage -->
+                <select id="tournamentStage">
+                    <option value="group">Group Stage</option>
+                    <option value="quarter">Quarterfinals</option>
+                    <option value="semiFinal">Semifinals</option>
+                    <option value="third">Third Place Playoff</option>
+                    <option value="final">Final</option>
+                  </select>
+                  
+            
+                <!-- end choice stage  -->
+				<!--end title -->
+				<!-- start matches container  -->
+				<div class="matches" id="matches">
+					<div class="matchbox">
+						<div class="homeTeam">
+							<div class="content">
+								<img src="https://shorturl.at/fjsKV" alt="" />
+								<h4 class="teamName">QAT</h4>
+							</div>
+						</div>
+						<div class="resultsContainer">
+							<h1 class="homePoints">-</h1>
+							<div class="result">
+								<h4 class="groupName">GROUP_A</h4>
+								<h1>X</h1>
+								<h4 class="mathDate">2022/11/20 <span>16:00</span></h4>
+							</div>
+							<h1 class="awayPoints">-</h1>
+						</div>
 
-    </header>
-    <!-- start Qatar word -->
-    <div class="qatarImgContainer">
-        <img src="./imgs/qatar-word.png" alt="">
-    </div>
-    <!-- end Qatar word -->
+						<div class="awayTeam">
+							<div class="content">
+								<img src="https://shorturl.at/fjsKV" alt="" />
+								<h4 class="teamName">ECU</h4>
+							</div>
+						</div>
+					</div>
+                    <div class="matchbox">
+						<div class="homeTeam">
+							<div class="content">
+								<img src="https://shorturl.at/fjsKV" alt="" />
+								<h4 class="teamName">QAT</h4>
+							</div>
+						</div>
+						<div class="resultsContainer">
+							<h1 class="homePoints">-</h1>
+							<div class="result">
+								<h4 class="groupName">GROUP_A</h4>
+								<h1>X</h1>
+								<h4 class="mathDate">2022/11/20 <span>16:00</span></h4>
+							</div>
+							<h1 class="awayPoints">-</h1>
+						</div>
 
-<!-- end header -->
-        
-
-
-</body>
+						<div class="awayTeam">
+							<div class="content">
+								<img src="https://shorturl.at/fjsKV" alt="" />
+								<h4 class="teamName">ECU</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end matches container  -->
+			</div>
+			<!--  end matches -->
+		</div>
+		<!-- axios library :  -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js" integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="js/script.js"></script>
+	</body>
 </html>

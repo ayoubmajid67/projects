@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+header{
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior:smooth;
+}
 body {
     font-family: "Noto Kufi Arabic", sans-serif;
     font-optical-sizing: auto;
@@ -25,8 +29,8 @@ a {
 
 /* start bootstrap media screen  */
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 
@@ -53,16 +57,34 @@ a {
     }
 }
 
-/* start header  */
 :root {
     --primaryBgColor: #811538;
     --borderColor: #1f030c5e;
+    --secondaryColor: #2e2d2d47;
 }
+
+/* start scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+
+    /* background-color: red; */
+
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primaryBgColor);
+}
+
+/* end scrollbar */
+
+
+/* start header  */
 
 header {
     height: 24vh;
     min-height: 220px;
-    background-color: var(--primaryBgColor);
+    background-color: #3c0b1a1d;
     clip-path: polygon(0 0, 100% 0%, 100% 96%, 0 80%);
     border-bottom: 20px solid var(--borderColor);
 
@@ -72,6 +94,13 @@ header .headerBackground {
     padding: 13px 20px;
     height: 100%;
     background-image: url('../imgs/pattern.png');
+}
+
+@media(max-width:992px) {
+    header {
+        background-color: unset;
+        border-color: #1f030c19;
+    }
 }
 
 /* start logo header */
@@ -114,11 +143,11 @@ header .headerBackground {
 }
 
 .headerBackground .TextContent h1:nth-child(1) {
-    font-size: 2.4em;
+    font-size: 2.5em;
 }
 
 .headerBackground .TextContent h1:nth-child(2) {
-    font-size: 2.6em;
+    font-size: 2.7em;
 }
 
 /* end logo header */
@@ -150,3 +179,233 @@ header .headerBackground {
 }
 
 /* end Qatar  img  */
+
+/* start main content  */
+.mainContent {
+    margin-bottom: 25px;
+}
+
+.mainContent .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    padding-top: 15px;
+
+}
+
+.mainContent .title {
+    direction: rtl;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.mainContent .title hr {
+    border: 1px solid var(--borderColor);
+}
+/* start roadmap container  */
+.roadmapContainer{
+ margin-top: 20px;
+ overflow: hidden;
+
+}
+.roadmapContainer img{
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 1px 5px 10px #420b1c19;
+    
+}
+/* end roadmap container  */
+
+
+/* start standing  */
+
+.mainContent .standing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 20px;
+    row-gap: 35px;
+    justify-content: center;
+}
+
+.standing .box {
+    box-shadow: 0px 5px 10px rgba(63, 63, 63, 0.202);
+    font-size: 15px;
+    border-radius: 3px;
+
+
+}
+
+.box .groupTitle {
+    text-align: center;
+    padding: 4px;
+    background-color: var(--primaryBgColor);
+    color: white;
+}
+
+/* Style the table */
+.standing table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    border-spacing: 0;
+    border: 0.2px solid var(--borderColor);
+
+}
+
+/* Style the table header cells */
+.standing thead {
+    color: white;
+}
+
+.standing thead td:nth-child(1) {
+    width: 30%;
+
+}
+
+.standing thead td {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #6d132f;
+    border-bottom: 2px solid var(--borderColor);
+}
+
+/* Style the table data cells */
+.standing td {
+    padding: 7.5px 12px;
+    text-align: center;
+    border-bottom: 1px solid #97929242;
+    font-weight: bold;
+}
+
+
+/* Style the span inside the table header cells */
+.standing thead span {
+    font-size: 0.8em;
+    color: wheat;
+}
+
+/* Style the team images */
+.TeamContainer {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    justify-content: baseline;
+    gap: 12px;
+
+}
+
+.mainContent img:not(.roadmapContainer img) {
+    aspect-ratio: 1/1;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.121);
+    object-fit: cover;
+    object-position: center;
+}
+
+.teamImg {
+    margin-left: 20px;
+    width: 40px;
+}
+
+.mainContent img[alt='Qatar Flag Img'] {
+    object-position: -15px;
+}
+
+/* end main content  */
+/*start tournamentStage */
+ select#tournamentStage {
+    font-size: 1.5rem;
+    padding: 20px;
+    border: 2px solid var(--borderColor);
+    background-color:#811537 ;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    appearance: none; /* Remove default dropdown arrow */
+    transition: 0.4s;
+  }
+
+  /* Hover effect */
+
+  /* Focus effect */
+  select#tournamentStage:focus-within{
+    outline: none;
+    background-color:transparent;
+    color: black;
+    box-shadow: 0 0 5px 1px var(--borderColor);
+  }
+
+
+/*end tournamentStage */
+/* start matches  */
+.matches {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.matches .matchbox {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.258);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 35px;
+
+}
+
+.matchbox .awayTeam,
+.matchbox .homeTeam {
+    width: 21%;
+    min-width: 100px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primaryBgColor);
+    color: white;
+}
+
+
+.matchbox .content img {
+    width: 50px;
+    margin-bottom: 3px;
+}
+@media (max-width:768px){
+ 
+    .matchbox .content img{
+        width: 30px;
+    }
+}
+
+.matchbox .resultsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.resultsContainer .result {
+    text-align: center;
+    align-items: baseline;
+
+}
+.result h4, h1 {
+    font-weight: 500;
+
+}
+@media (max-width:768px){
+ 
+    .result h1{
+        font-size: 30px;
+    }
+}
+
+
+/* end matches  */
