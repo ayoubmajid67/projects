@@ -173,7 +173,6 @@ selectStage.addEventListener("change", function (event) {
 	// Get the selected option's value
 	const selectedValue = event.target.value;
 
-
 	// Log the selected value to the console (you can do whatever you want with it)
 	if (obStages[selectedValue]) {
 		fillMatchesDateToDom(obStages[selectedValue]);
@@ -184,11 +183,10 @@ selectStage.addEventListener("change", function (event) {
 	selectStage.blur();
 
 	setTimeout(() => {
-			window.matches.scrollIntoView({ behavior: 'smooth'});
+		window.matches.scrollIntoView({ behavior: "smooth" });
 	}, 200);
-
 });
 
 // initial Load :
- fillMatchesDateToDom();
+fillMatchesDateToDom();
 fillStandingToDom();
