@@ -320,7 +320,8 @@ header .headerBackground {
  select#tournamentStage {
     font-size: 1.5rem;
     padding: 20px;
-    border: 2px solid var(--borderColor);
+    /* border: 2px solid var(--borderColor); */
+    outline: none;
     background-color:#811537 ;
     font-weight: bold;
     color: white;
@@ -333,13 +334,12 @@ header .headerBackground {
   /* Hover effect */
 
   /* Focus effect */
-  select#tournamentStage:focus-within{
+  select#tournamentStage:focus{
     outline: none;
-    background-color:transparent;
+    background-color:white;
     color: black;
     box-shadow: 0 0 5px 1px var(--borderColor);
-  }
-
+  }  
 
 /*end tournamentStage */
 /* start matches  */
