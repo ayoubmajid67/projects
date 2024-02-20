@@ -312,7 +312,7 @@ header .headerBackground {
 }
 
 .mainContent img[alt='Qatar Flag Img'] {
-    object-position: -15px;
+    object-position: -15px !important;
 }
 
 /* end main content  */
