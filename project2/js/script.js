@@ -1,5 +1,5 @@
 const ApiResources = {
-	baseUrl: "https://api.football-data.org/v4/",
+	baseUrl: "https://corsproxy.io/?https://api.football-data.org/v4/",
 	standingsEndPoint: "competitions/2000/standings",
 	standingUrl: "",
 	token: "4f4fc5cc642046548b5f1da34eb969aa",
@@ -14,6 +14,7 @@ async function getStandingResponse() {
 			headers: {
 				"X-Auth-Token": ApiResources.token,
 			},
+			withCredentials: false,
 		};
 
 		// Await the response from the axios.get method
@@ -97,6 +98,7 @@ async function getMatchesResponse(stage) {
 			headers: {
 				"X-Auth-Token": ApiResources.token,
 			},
+			withCredentials: false,
 		};
 
 		// Await the response from the axios.get method
