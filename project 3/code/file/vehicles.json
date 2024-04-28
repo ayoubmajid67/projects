@@ -1,0 +1,107 @@
+[
+    {
+        "anneeFabrication": 2015,
+        "couleur": "Blanc",
+        "marque": "Toyota",
+        "modele": "Corolla",
+        "type": "Voiture"
+    },
+    {
+        "anneeFabrication": 2018,
+        "couleur": "Rouge",
+        "marque": "Honda",
+        "modele": "Civic",
+        "type": "Voiture"
+    },
+    {
+        "anneeFabrication": 2019,
+        "capaciteCharge": 1500,
+        "marque": "Ford",
+        "modele": "F-150",
+        "type": "Camion"
+    },
+    {
+        "anneeFabrication": 2016,
+        "marque": "Harley-Davidson",
+        "modele": "Street Glide",
+        "type": "Moto",
+        "typeMoto": "Touring"
+    },
+    {
+        "anneeFabrication": 2017,
+        "couleur": "Noir",
+        "marque": "Chevrolet",
+        "modele": "Malibu",
+        "type": "Voiture"
+    },
+    {
+        "anneeFabrication": 2020,
+        "marque": "Ducati",
+        "modele": "Panigale V4",
+        "type": "Moto",
+        "typeMoto": "Sportive"
+    },
+    {
+        "anneeFabrication": 2014,
+        "couleur": "Bleu",
+        "marque": "Volvo",
+        "modele": "XC90",
+        "type": "Voiture"
+    },
+    {
+        "anneeFabrication": 2019,
+        "couleur": "Gris",
+        "marque": "Tesla",
+        "modele": "Model S",
+        "type": "Voiture"
+    },
+    {
+        "anneeFabrication": 2015,
+        "marque": "BMW",
+        "modele": "R 1200 GS",
+        "type": "Moto",
+        "typeMoto": "Adventure"
+    },
+    {
+        "anneeFabrication": 2018,
+        "couleur": "Argent",
+        "marque": "Audi",
+        "modele": "A4",
+        "type": "Voiture"
+    },
+    {
+        "anneeFabrication": 1999,
+        "capaciteCharge": 100,
+        "marque": "23",
+        "modele": "ms",
+        "type": "Camion"
+    },
+    {
+        "anneeFabrication": 1972,
+        "capaciteCharge": 12,
+        "marque": "audi",
+        "modele": "A6",
+        "type": "Camion"
+    },
+    {
+        "anneeFabrication": 2019,
+        "couleur": "noir",
+        "marque": "audi",
+        "modele": "a5",
+        "type": "Voiture"
+    },
+    {
+        "anneeFabrication": 1956,
+        "couleur": "red",
+        "marque": "12",
+        "modele": "dd",
+        "type": "Voiture"
+    },
+    {
+        "anneeFabrication": 1,
+        "couleur": "red",
+        "marque": "1",
+        "modele": "1",
+        "type": "Voiture"
+    }
+]

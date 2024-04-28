@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.sql": "oraclesql",
+        "xstring": "cpp",
+        "iostream": "cpp",
+        "xiosbase": "cpp",
+        "xutility": "cpp",
+        "iomanip": "cpp"
+    }
+}
